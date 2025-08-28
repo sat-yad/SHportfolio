@@ -3,7 +3,7 @@ import axios from "axios";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import "./Contact.css";
 import { FaWhatsappSquare } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import Zoom from "react-reveal/Zoom";
 import { toast } from "react-toastify";
 const Contact = () => {

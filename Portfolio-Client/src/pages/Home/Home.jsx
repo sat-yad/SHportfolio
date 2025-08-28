@@ -5,7 +5,7 @@ import Resume from "../../assets/Docs/Satyam_Resume.pdf";
 import { useTheme } from "../../Context/ThemeContext";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillSun } from "react-icons/ai";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
   const { theme, setTheme } = useTheme();

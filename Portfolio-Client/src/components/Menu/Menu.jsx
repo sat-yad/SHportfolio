@@ -3,7 +3,7 @@ import "./Menu.css";
 import Icons from "../Icons/Icons";
 import IconsName from "../IconsWithName/IconsName";
 import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const Menu = ({ toggle }) => {
   return (
