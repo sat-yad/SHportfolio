@@ -4,9 +4,9 @@
   "description": "portfolio-app",
   "main": "server.js",
   "scripts": {
-  "start": "node server.js",
-  "build": "cd Portfolio-Client && npm install && npm run build"
-},
+    "start": "node server.js",
+    "build": "cd Portfolio-Client && npm install && npm run build"
+  },
   "author": "Satyam",
   "license": "MIT",
   "dependencies": {
