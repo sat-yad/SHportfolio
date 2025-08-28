@@ -1,11 +1,11 @@
 import React from "react";
 import "./About.css";
 import "animate.css";
-import Jump from "react-reveal/Jump";
+import { JackInTheBox } from "react-awesome-reveal";
 const About = () => {
   return (
     <>
-      <Jump>
+      <JackInTheBox>
         <div className="about" id="about">
           <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
@@ -33,7 +33,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </Jump>
+      </JackInTheBox>
     </>
   );
 };
