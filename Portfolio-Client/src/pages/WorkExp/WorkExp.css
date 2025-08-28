@@ -1,0 +1,47 @@
+.work {
+  padding: 50px 0px;
+  margin-left: 120px;
+  background-color: #1387812a;
+}
+.work-exp h2 {
+  padding: 10px 0px;
+}
+.work-exp hr {
+  color: green;
+  width: 450px;
+  margin: 10px auto;
+}
+.work-exp .bulge {
+  font-weight: bold;
+  color: rgba(4, 132, 111, 0.824);
+}
+.work-exp .vertical-timeline-element-title {
+  color: #045b17;
+}
+.work-exp .vertical-timeline-element-subtitle {
+  color: #8ed7c2f4;
+}
+.paragraph {
+  color: #3a3a3ee1;
+}
+.vertical-timeline-element--work:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .work {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 50px;
+  }
+  .work-exp hr {
+    width: 300px;
+  }
+  .vertical-timeline-element--work {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}
