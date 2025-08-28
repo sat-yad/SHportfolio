@@ -9,7 +9,7 @@ const About = () => {
         <div className="about" id="about">
           <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
-              <img src="shubham2.jpg" alt="Profile-pic" />
+              <img src="shubham2.jpeg" alt="Profile-pic" />
             </div>
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
               <h1 className="animate__animated animate__pulse">About Me</h1>

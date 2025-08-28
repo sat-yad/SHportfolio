@@ -37,48 +37,39 @@ const Projects = () => {
   return (
     <div className="project" id="projects">
       <div className="container">
-        <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
+        <h2 className="text-center text-uppercase mt-3 mb-1">
           Top Recent Projects
         </h2>
         <hr />
         <p className="pb-3 text-center">
           I have developed several impactful projects showcasing my expertise in
-          full-stack and mobile development. I built a secure Online Voting
-          System using the MERN stack, featuring JWT-based authentication,
-          role-based access, and real-time vote tracking, ensuring
-          one-person-one-vote integrity with over 100 simulated users.
-          Additionally, I created a Food Delivery Application integrating the
-          Stripe payment gateway for secure transactions, along with an admin
-          dashboard to manage orders and improve efficiency. I also developed a
-          Math Puzzle Game for Android that includes multiple difficulty levels
-          to boost user engagement and an SQLite database for offline progress
-          tracking. These projects highlight my strong problem-solving
-          abilities, experience with modern frameworks, and ability to deliver
-          practical, real-world solutions.
+          full-stack and mobile development...
         </p>
 
         <div className="projects-row">
           {projects.map((project, idx) => (
             <div className="project-card" key={idx}>
               <Reveal keyframes={spin} duration={1000} triggerOnce>
-                <div className="card rounded">
+                <div className="card">
                   <div className="card-image">
                     <span className="card-notify-badge">
                       {project.badges[0]}
                     </span>
                     <img src={project.img} alt={project.title} />
                   </div>
-                  <div className="card-image-overlay m-auto mt-3">
+
+                  <div className="card-image-overlay">
                     {project.tech.map((t) => (
                       <span className="card-detail-badge" key={t}>
                         {t}
                       </span>
                     ))}
                   </div>
-                  <div className="card-body text-center">
-                    <div className="ad-title m-auto">
-                      <h5 className="text-uppercase m-auto">{project.title}</h5>
-                    </div>
+
+                  <div className="card-body">
+                    <h5 className="card-title text-uppercase">
+                      {project.title}
+                    </h5>
                     <a
                       className="ad-btn"
                       href={project.link}
