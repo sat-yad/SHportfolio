@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 👉 React build serve karna
-app.use(express.static(path.join(__dirname, "portfolio-client/dist")));
+app.use(express.static(path.join(__dirname, "Portfolio-Client/dist")));
 
 // API routes (example)
 app.get("/api/test", (req, res) => {
@@ -24,7 +24,7 @@ app.get("/api/test", (req, res) => {
 
 // React ke sabhi routes handle karne ke liye (SPA fallback)
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "portfolio-client/dist/index.html"));
+  res.sendFile(path.join(__dirname, "Portfolio-Client/dist/index.html"));
 });
 
 const PORT = process.env.PORT || 8080;
