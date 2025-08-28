@@ -2,10 +2,11 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "portfolio-app",
-  "main": "server.jsx",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.jsx"
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build": "cd portfolio-client && npm run build"
   },
   "author": "Satyam",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "express": "^4.19.2",
     "nodemailer": "^6.9.14",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "react-awesome-reveal": "^4.3.1"
   }
 }

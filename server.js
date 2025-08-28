@@ -1,32 +1,31 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const path = require("path");
-// dotenv config
-dotenv.config();
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
-// rest objects
+dotenv.config();
 const app = express();
 
-// middleware
 app.use(cors());
 app.use(express.json());
 
-// static files
+// __dirname banane ke liye (kyunki ES Module hai)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "./Portfolio-Client/dist")));
-// routes
-const Route = require("./routes/Route.jsx"); // Ensure this path is correct
-app.use("/api/v1/portfolio", Route);
+// 👉 React build serve karna
+app.use(express.static(path.join(__dirname, "portfolio-client/dist")));
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./Portfolio-Client/dist/index.html"));
+// API routes (example)
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API working fine 🚀" });
 });
-//port
-const PORT = process.env.PORT || 5000;
 
-//listen
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+// React ke sabhi routes handle karne ke liye (SPA fallback)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "portfolio-client/dist/index.html"));
 });
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
