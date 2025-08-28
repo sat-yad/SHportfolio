@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import "./Contact.css";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
-import Zoom from "react-reveal/Zoom";
+import {Zoom} from "react-awesome-reveal";
 import { toast } from "react-toastify";
 const Contact = () => {
   const [name, setName] = useState("");

@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { IoSchoolSharp } from "react-icons/io5";
 import "./Education.css";
-import Bounce from "react-reveal/Bounce";
+import {Bounce} from "react-awesome-reveal";
 const Education = () => {
   return (
     <>

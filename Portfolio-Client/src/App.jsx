@@ -9,7 +9,7 @@ import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "react-scroll-to-top";
 import style from "./../node_modules/dom-helpers/esm/css";
 import { useTheme } from "./Context/ThemeContext";
-import Tada from "react-reveal/Tada";
+import {Tada} from "react-awesome-reveal";
 import "./App.css";
 import MobileNav from "./components/MobileNav/MobileNav";
 import { ToastContainer } from "react-toastify";
